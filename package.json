@@ -1,0 +1,86 @@
+{
+  "name": "javascript-examples",
+  "version": "1.0.0",
+  "description": "Collection of examples in JavaScript to show how to get things done in an idiomatic way",
+  "license": "MIT",
+  "private": true,
+  "author": "Umut Şahin <umutsahin@protonmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umut-sahin/javascript-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umut-sahin/javascript-examples/issues"
+  },
+  "homepage": "https://github.com/umut-sahin/javascript-examples#readme",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "test:verbose": "ava --verbose",
+    "commit": "git-cz",
+    "lint": "eslint . --no-inline-config",
+    "brainfuck-interpreter": "node -r esm brainfuck-interpreter/src/main.js",
+    "command-line-arguments": "node -r esm command-line-arguments/src/main.js",
+    "http-hello-world-server": "node -r esm http-hello-world-server/src/main.js",
+    "read-from-console": "node -r esm read-from-console/src/main.js",
+    "tcp-echo-server": "node -r esm tcp-echo-server/src/main.js",
+    "timers": "node -r esm timers/src/main.js",
+    "write-to-console": "node -r esm write-to-console/src/main.js"
+  },
+  "devDependencies": {
+    "ava": "2.2.0",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "6.1.0",
+    "eslint-plugin-ava": "7.1.0",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "esm": "3.2.25"
+  },
+  "dependencies": {
+    "ansi-colors": "4.1.1",
+    "commander": "2.20.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint -s"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "esm": {
+    "mode": "auto",
+    "await": true,
+    "cjs": {
+      "cache": true,
+      "vars": true,
+      "interop": true,
+      "namedExports": true,
+      "paths": true,
+      "extensions": true,
+      "topLevelReturn": false
+    },
+    "sourceMap": true,
+    "debug": true,
+    "cache": true
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "files": [
+      "**/test/*.js"
+    ],
+    "sources": [
+      "**/assets/*.js",
+      "**/src/*.js"
+    ],
+    "cache": true,
+    "failFast": true,
+    "failWithoutAssertions": false
+  }
+}

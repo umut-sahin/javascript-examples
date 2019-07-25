@@ -1,0 +1,29 @@
+language: node_js
+
+notifications:
+  email:
+    on_success: never
+
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+
+node_js:
+  - "node"
+  - "12"
+  - "11"
+  - "10"
+
+dist: trusty
+
+sudo: required
+
+script:
+  - npm run lint
+  - npm run test:verbose
+
+branches:
+  only:
+    - master
+    - development
