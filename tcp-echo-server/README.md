@@ -1,6 +1,6 @@
 <div align="center">
   <h1>tcp-echo-server</h1>
-  A simple program which demonstrates how to create the most basic <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a> server which echoes back what the client writes after successfully connecting
+  A simple program, which demonstrates how to create the most basic <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a> server which echoes back what the client writes after successfully connecting
 </div>
 
 ## Authors

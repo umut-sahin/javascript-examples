@@ -24,7 +24,7 @@ We did not call the **load** by hand, though.
 The **constructor** of the **Interpreter** class handled that for us.
 If the syntax of the script file is correct, no exceptions are thrown.
 
-If everything went ok so far, we are now ready to interpret the parsed script.
+If everything went OK so far, we are now ready to interpret the parsed script.
 We tell the interpreter to start interpreting the script by calling the **execute** method.
 This method will go through the instructions one by one take the required actions.
 If there are no memory violations, no exceptions are raised, and we are done.

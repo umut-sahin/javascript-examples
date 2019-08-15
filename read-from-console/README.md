@@ -1,6 +1,6 @@
 <div align="center">
   <h1>read-from-console</h1>
-  A simple program which demonstrates how to read from the standard input
+  A simple program, which demonstrates how to read from the standard input
 </div>
 
 ## Authors
