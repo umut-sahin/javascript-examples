@@ -1,3 +1,8 @@
+1.0.1 / 16-08-2019
+==================
+
+  - Various typos in READMEs are fixed. ([#2](https://github.com/umut-sahin/javascript-examples/issues/2))
+
 1.0.0 / 15-07-2019
 ==================
 
