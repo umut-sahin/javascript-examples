@@ -1,6 +1,6 @@
 <div align="center">
   <h1>http-hello-world-server</h1>
-  A simple program which demonstrates how to create the most basic <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> server which responds the same way to every request whatsoever
+  A simple program, which demonstrates how to create the most basic <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> server which responds the same way to every request whatsoever
 </div>
 
 ## Authors
@@ -15,7 +15,7 @@ None
 
 This program uses the [**createServer**] function from the built-in [**http**] module to create an [HTTP] server, which listens to port **8080**.
 
-Then for each incoming request, it responses with the text **"Hello World!"**.
+Then for each incoming request, the server responds with the text **"Hello World!"**.
 
 ## Usage
 

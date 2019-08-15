@@ -1,6 +1,6 @@
 <div align="center">
   <h1>timers</h1>
-  A simple program which demonstrates how to use timers to execute a function indefinitely but with a delay
+  A simple program, which demonstrates how to use timers to execute a function indefinitely but with a delay
 </div>
 
 ## Authors
